@@ -81,7 +81,7 @@ export const uploadAudio = async (
   const blob = new Blob(audioChunks.current, { type: "audio/mp3" });
 
   const signedUrl =
-    "https://storage.googleapis.com/bucket-voice-notes/nombre-audio?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=upload-files-voice%40voice-notes-447102.iam.gserviceaccount.com%2F20250107%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250107T063340Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=content-type%3Bhost&X-Goog-Signature=c0c31248456bc69eac0d29037ec622b170b8b4ba015e93ec4b46e8bc56ff33cbd1b98a10be20a5b7bae7f8d3cc9dc24e0d701c09720a51466ea28aa79f109425b5e35569b6bbd14c999be25cd3fdc70f97196e70ef599b490803129ce9c684975e4f2e4d56550686806aad5f92327cd29734f66b64e78e0d58f3dc0fb25ad21b51393a9cde97faa6b5a90423ff8b806c9da25dbe396234a64ad6820a2f7955ff6388474bd7a4da9dcbc2c63012ce5d963b5c35f4961ad61d7138eb85417b157b5fb1011be7dde2d09ecb09f7e776d7f5a72dffb188cecc4e9f70e88e0c7696ff8d04f58256758a4917fb3531c138db9cb4a21437466a3c7373cb7021dc656f28";
+    ""
 
   try {
     const response = await uploadToGCSWithProgress(blob, setUploadProgress, signedUrl);
