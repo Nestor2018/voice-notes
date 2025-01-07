@@ -39,11 +39,28 @@ npm install
 
 En este proyecto ya esta configurado y la **Url firmada** que permite la subida
 de archivos yo la genere el día 6 de enero con una duración de 7 días, por lo que
-no es necesario que pongan otra para que funcione. antes de que se cumplan los 7
+no es necesario que pongan otra para que funcione. Antes de que se cumplan los 7
 días actualizare el repositorio con una nueva clave para que es proyecto siga
 funcionando. Pero si por alguna razón no guarda los archivos comunicarse conmigo
 al correo _<neybluenefa@gmail.com>_ y actualizo el la **Url firmada** para que
 funcione.
+
+[!IMPORTANTE]
+
+En el archivo `generateUrl` en este troso de codigo
+
+```javascript
+const storage = new Storage({
+  keyFilename: path.join(
+    __dirname,
+    "../assets/voice-notes-447102-8a8516fd6fd5.json",
+  ), // Ruta al archivo JSON de la cuenta de servicio
+});
+```
+
+Colocar la ruta donde descarguen el archivo json que les voy a compartir para ya
+que hay se sin ese archivo no funcionara lo relacionado con el Google Cloud
+Storage
 
 ### 5. Ejecuta la aplicación
 
