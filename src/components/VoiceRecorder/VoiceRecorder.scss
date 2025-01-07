@@ -1,0 +1,40 @@
+.record-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-button:hover {
+  background-color: #333333;
+}
+
+.mic-icon {
+  color: #666;
+  transition: all 0.1s ease;
+}
+
+.mic-icon.recording {
+  color: #ff4444;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
