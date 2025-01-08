@@ -20,13 +20,13 @@ También necesitarás una cuenta de Google Cloud con un bucket configurado en **
 Primero, clona el repositorio del proyecto en tu máquina local:
 
 ```bash
-git clone https://github.com/tu_usuario/voice-recorder-app.git
+git clone https://github.com/Nestor2018/voice-notes
 ```
 
 ### 2. Navega a la carpeta del proyecto
 
 ```bash
-cd voice-recorder-app
+cd voice-notes
 ```
 
 ### Instala las dependencias
