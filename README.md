@@ -69,9 +69,18 @@ En el archivo `audioUtils.ts` encontrarás el siguiente fragmento de código:
 ```TypeScript
   const signedUrl =
     ""
+    -"https://storage.googleapis.com/bucket-voice-notes/nombre-audio?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential"
+    -"=upload-files-voice%40voice-notes-447102.iam.gserviceaccount.com%2F20250113%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date="
+    -"20250113T012101Z&X-Goog-Expires=604800&X-Goog-SignedHeaders=content-type%3Bhost&X-Goog-Signature=8d7217a1a5279c9fc4551"
+    -"0ad56bb17b3e0547c1641b98d7b539ab5ecaba0cd9bf8d93f1f9cb377033cbe5e646ead54020b78"
+    -"8c751cf53c87c13a9ff2be2545ea27c5d7c0ab9773e1351afce268e7115cc59e235ae6734cdf8bf298bcddda5ca8486c59273952251b462"
+    -"12b378d4288fbf48722cc27bbdcf8f6d94e366af0d3112a615023b05a372da1a1e970baa0d5ec3a62921c4cc0d1598e1fdeb53dcc4d837dbdab83b0c2"
+    -"966e18d07ed9ddb6a3a91e8068053265811172c1cb5ad870132d6712e5a9f0289d1f977b4e241fc2e0d12b3a0fef88e47df6ab290bc1807f73fedd382ff2f1953e6b382f45951af315323060a1f0c31da8c36d119df50bf11618"
 ```
 
-En el mismo archivo txt que menciono arriba esta el string que va en esta parte
+Este es el string de la url firmada para poder guardar el archivo de audio, lo
+tengo asi en varias partes para que github no me lo bloquee, para poderlo usar
+deben unir todas las partes y pegar todo el string en la constante `signedUrl`
 
 ### 5. Ejecuta la aplicación
 
